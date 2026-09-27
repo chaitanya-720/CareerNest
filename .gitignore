@@ -1,0 +1,31 @@
+# Android Studio / IntelliJ
+*.iml
+.idea/
+!.idea/.gitignore
+
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Local configuration
+local.properties
+
+# Android build files
+/captures/
+/.externalNativeBuild/
+/.cxx/
+
+# Generated APK / App Bundle
+*.apk
+*.aab
+
+# Signing / Keystore files - DO NOT UPLOAD
+*.jks
+*.keystore
+
+# macOS
+.DS_Store
+
+# Temporary files
+Thumbs.db

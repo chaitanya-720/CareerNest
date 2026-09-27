@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- ===================================== -->
+    <!-- TOP BAR -->
+    <!-- ===================================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="20dp"
+        android:background="@color/surface">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_icon_button"
+            android:src="@android:drawable/ic_menu_revert"
+            android:contentDescription="Back"
+            android:tint="@color/text_primary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="Career Quiz"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- ===================================== -->
+    <!-- MAIN CONTENT -->
+    <!-- ===================================== -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!-- ===================================== -->
+            <!-- INTRO CARD -->
+            <!-- ===================================== -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@drawable/bg_white_card"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Discover Your Career Path"
+                    android:textColor="@color/text_primary"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Answer a few questions and explore careers that match your interests."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp" />
+
+            </LinearLayout>
+
+
+            <!-- ===================================== -->
+            <!-- QUESTION NUMBER -->
+            <!-- ===================================== -->
+
+            <TextView
+                android:id="@+id/txtQuestionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Question 1 of 5"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <!-- ===================================== -->
+            <!-- QUESTION -->
+            <!-- ===================================== -->
+
+            <TextView
+                android:id="@+id/txtQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Which activity interests you the most?"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="4dp" />
+
+
+            <!-- ===================================== -->
+            <!-- OPTIONS -->
+            <!-- ===================================== -->
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginBottom="12dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Building apps or websites"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_white_card"
+                    android:buttonTint="@color/primary" />
+
+                <RadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginBottom="12dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Analyzing data"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_white_card"
+                    android:buttonTint="@color/primary" />
+
+                <RadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginBottom="12dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Protecting systems"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_white_card"
+                    android:buttonTint="@color/primary" />
+
+                <RadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Designing interfaces"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:background="@drawable/bg_white_card"
+                    android:buttonTint="@color/primary" />
+
+            </RadioGroup>
+
+
+            <!-- ===================================== -->
+            <!-- HELPER TEXT -->
+            <!-- ===================================== -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Choose the option that best matches your interests."
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- ===================================== -->
+    <!-- BOTTOM BUTTONS -->
+    <!-- ===================================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/surface">
+
+        <!-- PREVIOUS -->
+
+        <TextView
+            android:id="@+id/btnPrevious"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Previous"
+            android:textColor="@color/primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_outline_button"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="1dp" />
+
+        <!-- NEXT -->
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/surface"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_primary_button"
+            android:backgroundTint="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

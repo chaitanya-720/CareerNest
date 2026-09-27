@@ -1,0 +1,92 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="280dp"
+    android:height="240dp"
+    android:viewportWidth="280"
+    android:viewportHeight="240">
+
+    <!-- Background circle -->
+    <path
+        android:fillColor="#E8E6FF"
+        android:pathData="M140,20
+        C75,20 25,70 25,130
+        C25,190 75,220 140,220
+        C205,220 255,190 255,130
+        C255,70 205,20 140,20Z"/>
+
+    <!-- Person -->
+    <path
+        android:fillColor="#FFD6B0"
+        android:pathData="M112,72
+        C112,55 125,44 140,44
+        C155,44 168,55 168,72
+        C168,88 156,99 140,99
+        C124,99 112,88 112,72Z"/>
+
+    <!-- Hair -->
+    <path
+        android:fillColor="#30208F"
+        android:pathData="M112,70
+        C112,51 125,40 141,40
+        C159,40 171,53 168,72
+        C160,61 153,58 143,60
+        C132,62 123,60 112,70Z"/>
+
+    <!-- Shirt -->
+    <path
+        android:fillColor="#6C4CE8"
+        android:pathData="M92,125
+        C96,106 110,98 140,98
+        C170,98 184,106 188,125
+        L205,202
+        L75,202
+        Z"/>
+
+    <!-- Laptop -->
+    <path
+        android:fillColor="#30335C"
+        android:pathData="M95,128
+        L185,128
+        L178,178
+        L102,178
+        Z"/>
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M105,137
+        L175,137
+        L170,169
+        L110,169
+        Z"/>
+
+    <path
+        android:fillColor="#4F35D8"
+        android:pathData="M75,181
+        L205,181
+        L214,193
+        L66,193
+        Z"/>
+
+    <!-- Small career icons -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M52,66
+        L58,78
+        L71,80
+        L61,89
+        L64,102
+        L52,95
+        L40,102
+        L43,89
+        L33,80
+        L46,78
+        Z"/>
+
+    <path
+        android:fillColor="#00BFA6"
+        android:pathData="M214,65
+        C214,55 222,48 232,48
+        C242,48 250,55 250,65
+        C250,75 242,82 232,82
+        C222,82 214,75 214,65Z"/>
+
+</vector>
